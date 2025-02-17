@@ -12,10 +12,14 @@ import process from 'process'
 import React, { Suspense, lazy, useEffect, useState } from 'react'
 import 'react-app-polyfill/stable'
 import { createRoot } from 'react-dom/client'
+import { HelmetProvider } from 'react-helmet-async'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+
+// 引入 HelmetProvider
 
 const AnalysisPage = lazy(() => import('./pages/Analysis'))
 const GalleryPage = lazy(() => import('./pages/Gallery-N'))
+const DictionaryPage = lazy(() => import('./pages/Gallery-N-Page'))
 
 if (process.env.NODE_ENV === 'production') {
   // for prod
@@ -48,25 +52,29 @@ function Root() {
 
   return (
     <React.StrictMode>
-      <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
-        <Suspense fallback={<Loading />}>
-          <Routes>
-            {isMobile ? (
-              <Route path="/*" element={<Navigate to="/mobile" />} />
-            ) : (
-              <>
-                <Route index element={<TypingPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
-                <Route path="/analysis" element={<AnalysisPage />} />
-                <Route path="/error-book" element={<ErrorBook />} />
-                <Route path="/friend-links" element={<FriendLinks />} />
-                <Route path="/*" element={<Navigate to="/" />} />
-              </>
-            )}
-            <Route path="/mobile" element={<MobilePage />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
+          <Suspense fallback={<Loading />}>
+            <Routes>
+              {isMobile ? (
+                <Route path="/*" element={<Navigate to="/mobile" />} />
+              ) : (
+                <>
+                  <Route index element={<TypingPage />} />
+                  <Route path="/gallery" element={<GalleryPage />} />
+                  <Route path="/analysis" element={<AnalysisPage />} />
+                  <Route path="/error-book" element={<ErrorBook />} />
+                  <Route path="/friend-links" element={<FriendLinks />} />
+                  <Route path="/*" element={<Navigate to="/" />} />
+
+                  <Route path="/dictionary/:id" element={<DictionaryPage />} />
+                </>
+              )}
+              <Route path="/mobile" element={<MobilePage />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+      </HelmetProvider>
     </React.StrictMode>
   )
 }

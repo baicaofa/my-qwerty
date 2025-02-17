@@ -9,8 +9,8 @@ export default function Progress({ className }: { className?: string }) {
 
   const colorSwitcher: { [key: number]: string } = {
     0: 'bg-indigo-200 dark:bg-indigo-300',
-    1: 'bg-indigo-300 dark:bg-indigo-400',
-    2: 'bg-indigo-400 dark:bg-indigo-500',
+    1: 'bg-indigo-300 dark:bg-blue-400',
+    2: 'bg-blue-400 dark: bg-blue-500',
   }
 
   useEffect(() => {

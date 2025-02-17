@@ -34,8 +34,8 @@ export default function DictionaryComponent({ dictionary }: Props) {
       <DialogTrigger asChild>
         <div
           ref={divRef}
-          className={`group flex  h-36 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
-            isSelected ? 'bg-indigo-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700'
+          className={`group flex  h-40 w-80 cursor-pointer items-center justify-center overflow-hidden rounded-lg p-4 text-left shadow-lg focus:outline-none ${
+            isSelected ? 'bg-blue-400' : 'bg-zinc-50 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700'
           }`}
           role="button"
           // onClick={onClick}
@@ -66,6 +66,9 @@ export default function DictionaryComponent({ dictionary }: Props) {
             </TooltipProvider>
 
             <p className={`mb-0.5 font-bold  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>{dictionary.length} 词</p>
+            <p className={`mb-0.5 text-xs  ${isSelected ? 'text-white' : 'text-gray-600 dark:text-gray-200'}`}>
+              <a href={`/dictionary/${dictionary.id}`}>{dictionary.name}</a>
+            </p>
             <div className=" flex w-full items-center pt-2">
               {progress > 0 && (
                 <Progress.Root
@@ -74,7 +77,7 @@ export default function DictionaryComponent({ dictionary }: Props) {
                   className={`mr-4 h-2 w-full rounded-full border  bg-white ${isSelected ? 'border-indigo-600' : 'border-indigo-400'}`}
                 >
                   <Progress.Indicator
-                    className={`h-full rounded-full pl-0 ${isSelected ? 'bg-indigo-600' : 'bg-indigo-400'}`}
+                    className={`h-full rounded-full pl-0 ${isSelected ? 'bg-indigo-600' : 'bg-blue-400'}`}
                     style={{ width: `calc(${progress}% )` }}
                   />
                 </Progress.Root>

@@ -60,7 +60,7 @@ export default function DataSetting() {
           <div className={styles.section}>
             <span className={styles.sectionLabel}>数据导出</span>
             <span className={styles.sectionDescription}>
-              目前，用户的练习数据<strong>仅保存在本地</strong>。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 Qwerty Learner，
+              目前，用户的练习数据<strong>仅保存在本地</strong>。如果您需要在不同的设备、浏览器或者其他非官方部署上使用 Keybr，
               您需要手动进行数据同步和保存。为了保留您的练习进度，以及使用近期即将上线的数据分析和智能训练功能，
               我们建议您及时备份您的数据。
             </span>
@@ -73,7 +73,7 @@ export default function DataSetting() {
                 value={exportProgress}
               >
                 <Progress.Indicator
-                  className="cubic-bezier(0.65, 0, 0.35, 1) h-full w-full bg-indigo-400 transition-transform duration-500 ease-out"
+                  className="cubic-bezier(0.65, 0, 0.35, 1) h-full w-full bg-blue-400 transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${100 - exportProgress}%)` }}
                 />
               </Progress.Root>
@@ -102,7 +102,7 @@ export default function DataSetting() {
                 value={importProgress}
               >
                 <Progress.Indicator
-                  className="cubic-bezier(0.65, 0, 0.35, 1) h-full w-full bg-indigo-400 transition-transform duration-500 ease-out"
+                  className="cubic-bezier(0.65, 0, 0.35, 1) h-full w-full bg-blue-400 transition-transform duration-500 ease-out"
                   style={{ transform: `translateX(-${100 - importProgress}%)` }}
                 />
               </Progress.Root>

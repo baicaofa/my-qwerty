@@ -91,7 +91,7 @@ export default function GalleryPage() {
                 <ScrollArea.Scrollbar className="flex touch-none select-none bg-transparent " orientation="vertical"></ScrollArea.Scrollbar>
               </ScrollArea.Root>
               {/* todo: 增加导航 */}
-              {/* <div className="mt-20 h-40 w-40 text-center ">
+              {/*  <div className="mt-20 h-40 w-40 text-center ">
                 <CategoryNavigation />
               </div> */}
             </div>

@@ -27,8 +27,8 @@ export default function LoopWordSwitcher() {
       <Popover className="relative">
         <Popover.Button
           className={`p-[2px] ${
-            loopTimes === 1 ? 'text-gray-500' : 'text-indigo-500'
-          } rounded text-lg hover:bg-indigo-400 hover:text-white focus:outline-none `}
+            loopTimes === 1 ? 'text-gray-500' : 'text-blue-500'
+          } rounded text-lg hover:bg-blue-400 hover:text-white focus:outline-none `}
           type="button"
           onClick={(e) => {
             setIsOpen(!isOpen)
