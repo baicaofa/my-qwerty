@@ -6,17 +6,14 @@
   Keybr
 </h1>
 
-<p align="center">
-  <a href="./docs/README_EN.md">English</a>  
-  <a href="./docs/README_JP.md">日本語</a>  
-</p>
+
 
 <p align="center">
   为键盘工作者设计的单词记忆与英语肌肉记忆锻炼软件
 </p>
 
 <p align="center">
-  <a href="https://github.com/Realkai42/qwerty-learner/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Realkai42/qwerty-learner" alt="License"></a>
+
   <a><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/></a>
   <a><img src="https://img.shields.io/badge/Powered%20by-React-blue"/></a>
 </p>
@@ -25,20 +22,7 @@
 <img  src="docs/Screenshot.png"/>
 </div>
 
-## 📸 在线访问
 
-**首选部署**: <https://qwerty.kaiyi.cool/>  
-GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
-
-镜像仓库:  
-[GitCode: RealKai42/qwerty-learner](https://gitcode.com/RealKai42/qwerty-learner/overview)  
-[Gitee: KaiyiWing/qwerty-learner)](https://gitee.com/KaiyiWing/qwerty-learner)
-<br/>
-<br/>
-
-项目已发布 VSCode 插件版，一键启动、随时开始练习  
-[VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)  
-[GitHub](https://github.com/Realkai42/qwerty-learner-vscode)
 
 <br />
 
@@ -156,15 +140,6 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 
 > 此脚本依赖于 `homebrew`，请确保自己电脑上可以执行`brew`命令
 
-## 🏆 荣誉
-
-- Github 全球趋势榜上榜项目
-- V2EX 全站热搜项目
-- Gitee 全站推荐项目
-- [少数派首页推荐](https://sspai.com/post/67535)
-- GitCode 开源摘星计划-毕业项目（[G-Star 计划](https://gitcode.com/g-star)）
-- Gitee 最有价值开源项目（[GVP](https://gitee.com/gvp)）
-
 ## 📕 词库列表
 
 - CET-4
@@ -200,46 +175,19 @@ GitHub Pages: <https://realkai42.github.io/qwerty-learner/>
 - Linux Command. [@归谜](https://github.com/vhxubo)
 - C#: List API [@nidbCN](https://github.com/nidbCN)
 
-目前 API 相关词库主要依赖于社区贡献，如果您想贡献自己需要的 API 词库，建议参考 [Issue #42](https://github.com/Realkai42/qwerty-learner/issues/40) [pr #67](https://github.com/Realkai42/qwerty-learner/pull/67) 贡献词典。
-
 <br />
 <br />
 
 ## 🎙 功能与建议
 
-目前项目处于开发初期，新功能正在持续添加中，如果你对软件有任何功能与建议，欢迎在 Issues 中提出
 
-项目的进展与未来计划在 [Issue](https://github.com/Realkai42/qwerty-learner/issues/42) 中详细介绍，内部也包含对未来功能的意见征询等，如果对 Keybr 的未来感兴趣，欢迎参与讨论。
-
-如果你也喜欢本软件的设计思想，欢迎提交 pr，非常感谢你对我们的支持！
 <br />
 <br />
 
-## 🏄‍♂️ 贡献指南
-
-如果您对本项目感兴趣，我们非常欢迎参与到项目的贡献中，我们会尽可能地提供帮助
-
-在贡献前，希望您阅读 [Issue #42](https://github.com/Realkai42/qwerty-learner/issues/42) 了解我们目前的开发计划，我们希望您能参与到"计划中"的工作亦或者 Issue 区 Label 为 "Help Wanted" 的工作，我们也非常欢迎您实现自己的想法。
-
-如果您确定了想要参与的工作，希望在有基本进展后提交 draft pr，我们可以在 draft pr 上进行讨论，也有利于听取其他 collaborator 的意见。
-
-再次感谢您对项目的贡献！🎉
 
 <br />
 
-## ☕️ Buy us a coffe
 
-非常感谢大家使用 Keybr, 目前该网站由三个人用业余时间在维护，我们希望在未来购买独立的域名(目前使用 vercel 部署)，并购买服务器以方便国内用户访问与云同步存储数据。
-
-如果您喜欢我们软件，非常感谢您对我们未来的支持!
-
-<img  src="https://github.com/Realkai42/qwerty-learner/blob/master/docs/alipay.png" width="200px"/>
-
-## 👨‍💻 Contributors
-
-<a href="https://github.com/Realkai42/qwerty-learner/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Realkai42/qwerty-learner" />
-</a>
 
 ## 🎁 大感谢
 
